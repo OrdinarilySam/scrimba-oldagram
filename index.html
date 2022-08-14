@@ -1,9 +1,32 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet"> 
+        <title>Oldagram</title>
     </head>
     <body>
-        <img src="images/logo.png">
+        <div class="container">
+            <header>
+                <img class="logo" src="images/logo.png" alt="Logo of Oldagram">
+                <img class="pfp" src="images/user-avatar.png" alt="User's profile picture">
+            </header>
+
+            <section class="posts">
+                <div class="post">
+                    <div class="post-header">
+                        <img class="pfp" src="images/avatar-vangogh.jpg">
+                        <div class="post-header-info">
+                            <h3>Vincent van Gogh</h3>
+                            <p>Zudert, Netherlands</p>
+                        </div>
+                    </div>
+                    <img class="post-img" src="images/post-vangogh.jpg" alt="Van gogh's self portrait">
+                </div>
+            </section>
+
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

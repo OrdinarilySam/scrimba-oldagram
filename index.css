@@ -1,5 +1,62 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #c6c6c6;
+    font-family: 'Source Sans Pro';
 }
 
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+header .pfp{
+    padding: 0 15px;
+}
+
+.logo{
+    padding: 0 15px;
+    width: 127px;
+}
+
+.pfp{
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+}
+
+.post{
+    height: 554px;
+}
+
+.post-img{
+    width: 100%;
+}
+
+h3{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.post-header{
+    display: flex;
+    height: 55px;
+}
+.post-header-info{
+    display: flex;
+    flex-direction: column;
+}
