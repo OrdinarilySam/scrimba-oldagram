@@ -28,3 +28,28 @@ const posts = [
     }
 ]
 
+const postsEl = document.querySelector(".posts")
+postsHtml = ""
+
+
+for (let i=0; i<posts.length; i++){
+    postsHtml += `<div class="post">
+                    <div class="post-header">
+                        <img class="pfp" src="${posts[i].avatar}">
+                        <div class="post-header-info">
+                            <h3>${posts[i].name}</h3>
+                            <p>${posts[i].location}</p>
+                        </div>
+                    </div>
+                    <img id="img-${i}" class="post-img" src="${posts[i].post}" alt="${posts[i].name}'s self portrait">
+                    <div class="post-options">
+                        <button id="btn-${i}"><img class="icon" src="images/icon-heart.png" alt="Like button"></button>
+                        <img class="icon" src="images/icon-comment.png" alt="Comment button">
+                        <img class="icon" src="images/icon-dm.png" alt="DM button">
+                    </div>
+                    <p id="likes-${i}" class="likes">${posts[i].likes} likes</p>
+                    <p class="caption"><span class="username">${posts[i].username}</span> ${posts[i].comment}</p>
+                </div>`
+}
+
+postsEl.innerHTML = postsHtml
